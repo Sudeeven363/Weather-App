@@ -11,7 +11,7 @@ body{
     color: white;
     font-family: sans-serif;
 }
-h1{
+h1,h2{
     color:aliceblue;
 }
 input{
@@ -25,6 +25,10 @@ input{
     color:white;
     border-radius: 20px;
 
+}
+span{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: aliceblue;
 }
 ::-webkit-input-placeholder{
     color: aliceblue;

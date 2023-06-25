@@ -18,10 +18,12 @@ async function showweather() {
     const response = await fetch(url, options);
     const result = await response.json();
     console.log(result);
-    cityname.innerHTML = a;
-    temp.innerHTML = "Temperature : " + result.temp + " degree Celsius";
+    cityname.innerHTML = a.toLocaleUpperCase();
+    temp.innerHTML = "Temperature : " + result.temp + " °C";
     humidity.innerHTML = "Humidity : " + result.humidity + " %";
-    feelslike.innerHTML = "Feels like : " + result.feels_like + " degree Celsius";
+    feelslike.innerHTML = "Feels like : " + result.feels_like + " °C";
+    windspeed.innerHTML = "Wind Speed : "+ Math.trunc((result.wind_speed*3.6)) + " km/hr";
+
   } catch (error) {
     console.error(error);
   }

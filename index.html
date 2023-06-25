@@ -8,16 +8,20 @@
   </head>
   <body>
     <center>
+      <div class="container">
       <h1>Weather App</h1>
       <input placeholder="Enter city name" id="placename" type="text" />
       <button id="searchfor" onclick="showweather()">Search</button>
+      </div>
 
-      <div id="showweather">
+
+      <span id="showweather">
         <h1 id="cityname"></h1>
         <h2 id="temp"></h2>
         <h2 id="humidity"></h2>
         <h2 id="feelslike"></h2>
-      </div>
+        <h2 id="windspeed"></h2>
+      </span>
     </center>
     <script src="app.js"></script>
   </body>
